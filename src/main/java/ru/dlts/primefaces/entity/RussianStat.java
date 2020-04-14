@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class RussianStat {
     String location;
-    Long stick;
-    Long healed;
-    Long die;
+    String stick;
+    String healed;
+    String die;
 }

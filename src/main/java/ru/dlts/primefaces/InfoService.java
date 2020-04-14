@@ -45,9 +45,9 @@ public class InfoService {
                     JSONObject jsonObject = (JSONObject) o;
 
                     russianStat.setLocation((String)jsonObject.get("location"));
-                    russianStat.setHealed((Long)jsonObject.get("healed"));
-                    russianStat.setStick((Long)jsonObject.get("stick"));
-                    russianStat.setDie(((Long)jsonObject.get("die")));
+                    russianStat.setHealed((String)jsonObject.get("healed"));
+                    russianStat.setStick((String)jsonObject.get("stick"));
+                    russianStat.setDie(((String)jsonObject.get("die")));
 
                     russianStatsList.add(russianStat);
                 }

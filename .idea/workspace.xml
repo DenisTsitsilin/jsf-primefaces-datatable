@@ -1,48 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f91b5e3-1ea4-49f1-b435-bb5449b86bcf" name="Default Changelist" comment="" />
+    <list default="true" id="7bdc3597-b72d-4115-999b-2e1d562a1618" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsf-primefaces-datatable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jsf-primefaces-datatable.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/BasicView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/TabbedView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/entity/RussianStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/entity/RussianStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jsf-primefaces-datatable.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/basic.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/resources/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/SpringPrimeFacesApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/BasicView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/InfoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/InfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/InfoView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/TabbedView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/entity/Info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/entity/MainRussianInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/entity/MainWorldInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/entity/RussianStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codenotfound/primefaces/entity/WorldStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1aXJdrPvE5nmArvS3ThGgupNHDM" />
+  <component name="ProjectId" id="1aXpk6aMF4mOyTIqzKHpjzwJP6W" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vkbotvirusinfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.codenotfound.primefaces" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,7 +95,7 @@
   <component name="RunManager">
     <configuration name="SpringPrimeFacesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jsf-primefaces-datatable" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codenotfound.SpringPrimeFacesApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.dlts.SpringPrimeFacesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,18 +106,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4f91b5e3-1ea4-49f1-b435-bb5449b86bcf" name="Default Changelist" comment="" />
-      <created>1586876095206</created>
+      <changelist id="7bdc3597-b72d-4115-999b-2e1d562a1618" name="Default Changelist" comment="" />
+      <created>1586891932337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586876095206</updated>
-      <workItem from="1586876097783" duration="1590000" />
-      <workItem from="1586884730391" duration="3993000" />
+      <updated>1586891932337</updated>
+      <workItem from="1586891935926" duration="1856000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
