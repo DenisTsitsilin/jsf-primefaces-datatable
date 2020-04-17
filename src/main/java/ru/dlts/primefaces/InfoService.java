@@ -1,6 +1,8 @@
 package ru.dlts.primefaces;
 
+import org.json.simple.parser.ParseException;
 import ru.dlts.primefaces.entity.Info;
+import ru.dlts.primefaces.entity.MainRussianInfo;
 import ru.dlts.primefaces.entity.RussianStat;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -23,11 +25,12 @@ public class InfoService {
     public Info searchInfo(){
         Info info = new Info();
         info.setRussianStat(getRussianStat());
+        info.setMainRussianInfo(getMainRassianInfo());
         return info;
     }
 
 
-    protected static List<RussianStat> getRussianStat(){
+    private List<RussianStat> getRussianStat(){
         JSONParser parser = new JSONParser();
         List<RussianStat> russianStatsList = new ArrayList<>();
 
@@ -61,5 +64,38 @@ public class InfoService {
             e.printStackTrace();
         }
         return russianStatsList;
+    }
+
+    private MainRussianInfo getMainRassianInfo(){
+        JSONParser parser = new JSONParser();
+        MainRussianInfo mainRussianInfo = new MainRussianInfo();
+
+        try {
+            URL url = new URL("https://virusinfo.herokuapp.com"); // URL to Parse
+            URLConnection yc = url.openConnection();
+            BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
+
+            String inputLine = in.readLine();
+            Object obj = parser.parse(inputLine);
+            JSONObject jsonObject = (JSONObject) obj;
+
+            mainRussianInfo.setActive((Long)jsonObject.get("active"));
+            mainRussianInfo.setDate((String)jsonObject.get("date"));
+            mainRussianInfo.setDie((Long)jsonObject.get("die"));
+            mainRussianInfo.setDiePlus((Long)jsonObject.get("diePlus"));
+            mainRussianInfo.setHealed((Long)jsonObject.get("healed"));
+            mainRussianInfo.setHealedPlus((Long)jsonObject.get("healedPlus"));
+            mainRussianInfo.setInfected((Long)jsonObject.get("infected"));
+            mainRussianInfo.setInfectedPlus((Long)jsonObject.get("infectedPlus"));
+            mainRussianInfo.setTestsCount((String)jsonObject.get("testsCount"));
+            mainRussianInfo.setTestsPlus((String)jsonObject.get("testsPlus"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return mainRussianInfo;
     }
 }

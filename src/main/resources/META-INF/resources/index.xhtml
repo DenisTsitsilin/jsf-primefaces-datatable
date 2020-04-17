@@ -6,54 +6,137 @@
 
 <h:head>
   <title>COVID-19 Info</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 15px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .col {
+            float: left;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .headerInfo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #003188;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
 </h:head>
 
 <h:body>
+    <div class="header">
+        <h1>Оперативная информация</h1>
+        <h:outputText value="По состоянию на #{infoView.info.mainRussianInfo.date}" />
+        <div class="row">
+            <div class="column">
+                <h2>Случаев заблевания</h2>
+                <h:outputText value="#{infoView.info.mainRussianInfo.infected}" styleClass="headerInfo"/>
+            </div>
+            <div class="column">
+                <h2>Выздоровело</h2>
+                <h:outputText value="#{infoView.info.mainRussianInfo.healed}" styleClass="headerInfo"/>
+            </div>
+            <div class="column">
+                <h2>Умерло</h2>
+                <h:outputText value="#{infoView.info.mainRussianInfo.die}" styleClass="headerInfo"/>
+            </div>
+            <div class="column">
+                <h2>Активных больных</h2>
+                <h:outputText value="#{infoView.info.mainRussianInfo.active}" styleClass="headerInfo"/>
+            </div>
+        </div>
+    </div>
 
-    <p:accordionPanel>
-        <p:tab title="Статистика по России">
-            <h:panelGrid columns="2" cellpadding="10">
-                <p:dataTable var="russianStat" value="#{infoView.info.russianStat}">
-                    <p:column headerText="Регион">
-                        <h:outputText value="#{russianStat.location}" />
-                    </p:column>
+    <div class="row">
+        <div class="col">
+            <p:accordionPanel>
+                <p:tab title="Статистика по России">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:dataTable var="russianStat" value="#{infoView.info.russianStat}">
+                            <p:column headerText="Регион">
+                                <h:outputText value="#{russianStat.location}" />
+                            </p:column>
 
-                    <p:column headerText="Заражено">
-                        <h:outputText value="#{russianStat.stick}" />
-                    </p:column>
+                            <p:column headerText="Заражено">
+                                <h:outputText value="#{russianStat.stick}" />
+                            </p:column>
 
-                    <p:column headerText="Вылечено">
-                        <h:outputText value="#{russianStat.healed}" />
-                    </p:column>
+                            <p:column headerText="Вылечено">
+                                <h:outputText value="#{russianStat.healed}" />
+                            </p:column>
 
-                    <p:column headerText="Умерло">
-                        <h:outputText value="#{russianStat.die}" />
-                    </p:column>
-                </p:dataTable>
-            </h:panelGrid>
-        </p:tab>
-        <p:tab title="Статистика по миру">
-            <h:panelGrid columns="2" cellpadding="10">
-<!--                <p:dataTable var="car" value="#{carsView.cars}">-->
-<!--                    <p:column headerText="Id">-->
-<!--                        <h:outputText value="#{car.id}" />-->
-<!--                    </p:column>-->
+                            <p:column headerText="Умерло">
+                                <h:outputText value="#{russianStat.die}" />
+                            </p:column>
+                        </p:dataTable>
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="Статистика по миру">
+                    <h:panelGrid columns="2" cellpadding="10">
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+        </div>
+    </div>
 
-<!--                    <p:column headerText="Year">-->
-<!--                        <h:outputText value="#{car.year}" />-->
-<!--                    </p:column>-->
 
-<!--                    <p:column headerText="Brand">-->
-<!--                        <h:outputText value="#{car.brand}" />-->
-<!--                    </p:column>-->
-
-<!--                    <p:column headerText="Color">-->
-<!--                        <h:outputText value="#{car.color}" />-->
-<!--                    </p:column>-->
-<!--                </p:dataTable>-->
-            </h:panelGrid>
-        </p:tab>
-    </p:accordionPanel>
 
 </h:body>
 </html>
