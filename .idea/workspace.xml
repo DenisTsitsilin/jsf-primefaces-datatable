@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bdc3597-b72d-4115-999b-2e1d562a1618" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dlts/primefaces/InfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resources/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/resources/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/dlts/primefaces/InfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/dlts/primefaces/InfoService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,9 @@
       <workItem from="1587039156757" duration="678000" />
       <workItem from="1587060431271" duration="599000" />
       <workItem from="1587116880533" duration="3383000" />
-      <workItem from="1587121590829" duration="1663000" />
+      <workItem from="1587121590829" duration="2790000" />
+      <workItem from="1587190345197" duration="848000" />
+      <workItem from="1587367472245" duration="1445000" />
     </task>
     <servers />
   </component>

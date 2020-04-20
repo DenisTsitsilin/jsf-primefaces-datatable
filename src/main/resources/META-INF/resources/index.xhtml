@@ -71,6 +71,12 @@
             color: #003188;
         }
 
+        .headerInfoPlus{
+            font-size: 18px;
+            font-weight: bold;
+            color: orange;
+        }
+
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media screen and (max-width:600px) {
             .column {
@@ -81,21 +87,26 @@
 </h:head>
 
 <h:body>
+
+
     <div class="header">
-        <h1>Оперативная информация</h1>
+        <h1>Оперативная информация по России</h1>
         <h:outputText value="По состоянию на #{infoView.info.mainRussianInfo.date}" />
         <div class="row">
             <div class="column">
-                <h2>Случаев заблевания</h2>
+                <h2>Случаев заболевания</h2>
                 <h:outputText value="#{infoView.info.mainRussianInfo.infected}" styleClass="headerInfo"/>
+                <h:outputText value="   +#{infoView.info.mainRussianInfo.infectedPlus}" styleClass="headerInfoPlus"/>
             </div>
             <div class="column">
                 <h2>Выздоровело</h2>
                 <h:outputText value="#{infoView.info.mainRussianInfo.healed}" styleClass="headerInfo"/>
+                <h:outputText value="   +#{infoView.info.mainRussianInfo.healedPlus}" styleClass="headerInfoPlus"/>
             </div>
             <div class="column">
                 <h2>Умерло</h2>
                 <h:outputText value="#{infoView.info.mainRussianInfo.die}" styleClass="headerInfo"/>
+                <h:outputText value="   +#{infoView.info.mainRussianInfo.diePlus}" styleClass="headerInfoPlus"/>
             </div>
             <div class="column">
                 <h2>Активных больных</h2>
@@ -107,7 +118,10 @@
     <div class="row">
         <div class="col">
             <p:accordionPanel>
-                <p:tab title="Статистика по России">
+                <p:tab title="Карта распространения коронавируса">
+                    <iframe src="https://coronavirus-monitor.ru/map" frameBorder="0" height="800" width="100%" style="max-width: 100%;"></iframe>
+                </p:tab>
+                <p:tab title="Статистика случаев заражения коронавирусом в Роcсии (#{infoView.info.mainRussianInfo.date})">
                     <h:panelGrid columns="2" cellpadding="10">
                         <p:dataTable var="russianStat" value="#{infoView.info.russianStat}">
                             <p:column headerText="Регион">
